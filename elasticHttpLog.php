@@ -50,7 +50,7 @@ $error_count = $results['hits']['total'];
 $total_line =  $globalcount['hits']['total'];
 
 $request = array();
-// TODO set $search['size'] if > $error_count 
+
 if ( $search['size'] >= $error_count ) { $nbline = $error_count; } else { $nbline = $search['size']; } 
 
 for ($i = 0; $i < $nbline; $i++) {
